@@ -11,7 +11,9 @@ import SwiftUI
 struct JSONParserApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().frame(minWidth: 500, maxWidth: .infinity,
+                                minHeight: 500, maxHeight: .infinity,
+                                alignment: .center)
         }
     }
 }

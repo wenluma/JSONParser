@@ -11,6 +11,7 @@
 		86AD411628DD50A8006C0A75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AD411528DD50A8006C0A75 /* ContentView.swift */; };
 		86AD411828DD50A9006C0A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86AD411728DD50A9006C0A75 /* Assets.xcassets */; };
 		86AD411B28DD50A9006C0A75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86AD411A28DD50A9006C0A75 /* Preview Assets.xcassets */; };
+		86AD412328DD7CFD006C0A75 /* FormatParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AD412228DD7CFD006C0A75 /* FormatParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		86AD411728DD50A9006C0A75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86AD411A28DD50A9006C0A75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		86AD411C28DD50A9006C0A75 /* JSONParser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JSONParser.entitlements; sourceTree = "<group>"; };
+		86AD412228DD7CFD006C0A75 /* FormatParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				86AD411328DD50A8006C0A75 /* JSONParserApp.swift */,
 				86AD411528DD50A8006C0A75 /* ContentView.swift */,
+				86AD412228DD7CFD006C0A75 /* FormatParser.swift */,
 				86AD411728DD50A9006C0A75 /* Assets.xcassets */,
 				86AD411C28DD50A9006C0A75 /* JSONParser.entitlements */,
 				86AD411928DD50A9006C0A75 /* Preview Content */,
@@ -141,6 +144,7 @@
 			files = (
 				86AD411628DD50A8006C0A75 /* ContentView.swift in Sources */,
 				86AD411428DD50A8006C0A75 /* JSONParserApp.swift in Sources */,
+				86AD412328DD7CFD006C0A75 /* FormatParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
