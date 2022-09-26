@@ -35,13 +35,29 @@ extension Color {
 }
 
 struct ContentView: View {
+    let key = KeyEquivalent("+")
     @State var sourceText: String = "{\"a\":1}"
     @State var destText: String = "json format";
     @State var showToast: Bool = false
+    @State var size: CGFloat = 15
+    @State var font : Font = .system(size: 15)
     
     var body: some View {
         VStack {
             HStack {
+                Button("字体大") {
+                    size += 2
+                    print("font +: \(size)")
+                    font = .system(size: size)
+                }.keyboardShortcut(key,
+                                   modifiers: [.shift, .command])
+                Button("字体小") {
+                    size -= 2
+                    print("font +: \(size)")
+                    font = .system(size: size)
+                }.keyboardShortcut(KeyEquivalent("-"),
+                                   modifiers: [.shift, .command])
+                
                 Button("check") {
                     let result = FormatParser.checkJSONObject(sourceText)
                     showToast = result
@@ -78,8 +94,8 @@ struct ContentView: View {
                     .foregroundColor(.accentColor)
             }
             HStack {
-                TextEditor(text: $sourceText).padding()
-                TextEditor(text: $destText).padding()
+                TextEditor(text: $sourceText).font(font).padding()
+                TextEditor(text: $destText).font(font).padding()
             }
             Text("JSON Format")
         }
