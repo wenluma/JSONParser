@@ -45,18 +45,18 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HStack {
-                Button("字体大") {
-                    size += 2
-                    print("font +: \(size)")
-                    font = .system(size: size)
-                }.keyboardShortcut(key,
-                                   modifiers: [.shift, .command])
-                Button("字体小") {
-                    size -= 2
-                    print("font +: \(size)")
-                    font = .system(size: size)
-                }.keyboardShortcut(KeyEquivalent("-"),
-                                   modifiers: [.shift, .command])
+//                Button("字体大") {
+//                    size += 2
+//                    print("font +: \(size)")
+//                    font = .system(size: size)
+//                }.keyboardShortcut(key,
+//                                   modifiers: [.shift, .command])
+//                Button("字体小") {
+//                    size -= 2
+//                    print("font +: \(size)")
+//                    font = .system(size: size)
+//                }.keyboardShortcut(KeyEquivalent("-"),
+//                                   modifiers: [.shift, .command])
                 
                 Button("check") {
                     let result = FormatParser.checkJSONObject(sourceText)
@@ -94,7 +94,7 @@ struct ContentView: View {
                     .foregroundColor(.accentColor)
             }
             HStack {
-                TextEditor(text: $sourceText).font(font).padding()
+                TextEditor(text: $sourceText).font(.system(.caption)).padding()
                 TextEditor(text: $destText).font(font).padding()
             }
             Text("JSON Format")

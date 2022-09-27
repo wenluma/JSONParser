@@ -70,7 +70,7 @@ class FormatParser {
         }
         if let jsonResult = json as? Dictionary<String, AnyObject> {
             print(jsonResult.keys)
-        }  else if let jsonResult = json as? Array<AnyObject> {
+        }  else if let _ = json as? Array<AnyObject> {
             print("array")
         }
         return json
